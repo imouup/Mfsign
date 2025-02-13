@@ -12,6 +12,7 @@ env:
 
 jobs:
   auto_sign:
+    if: ${{ secrets.ACCOUNT != '' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
